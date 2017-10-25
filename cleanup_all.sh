@@ -1,7 +1,7 @@
 #!/bin/bash
 #This program cleans up the infrastructure and all delployed apps
 
-source ~/os-helm-installer/os-helm-cleanup.sh
+source ~/os-helm-aio-installer/os-helm-cleanup.sh
 
 # Remove Dashboard
 helm delete --purge dashboard

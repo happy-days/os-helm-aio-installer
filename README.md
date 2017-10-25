@@ -11,17 +11,17 @@ The user must not be root but have sudoers access.
 
 # Installation Instructions
 
-__1. Disable https certificate verification for GIT__
+__1. _Ignore if from Github_ - Disable https certificate verification for GIT__
     
     git config --global http.sslVerify "false"
 
 __2. Clone the repository__
     
-    git clone https://spoc-gitlab.charterlab.com/DCNETARCH/os-helm-installer.git
+    git clone https://github.com/charter-ctec/os-helm-aio-installer.git
 
 __3. Change to the installer directory__
     
-    cd os-helm-installer
+    cd os-helm-aio-installer
 
 __4. Optionally, edit the following variables in the os-helm-env file to setup the openstack provider networks and add a network interface to the OVS external bridge__
     

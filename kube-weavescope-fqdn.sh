@@ -25,7 +25,7 @@ function echo_yellow {
 }
 
 source os-helm-env
-cd ~/os-helm-installer
+cd ~/os-helm-aio-installer
 
 
 

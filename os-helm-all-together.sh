@@ -30,7 +30,7 @@ cd ~/
 echo_green "\n Sourcing os-helm-env variables"
 
 echo_green "\n Installing OS Helm Tiller Kubernetes Infrastructure"
-source ~/os-helm-installer/os-helm-kube-infrastructure.sh
+source ~/os-helm-aio-installer/os-helm-kube-infrastructure.sh
 
 echo_green "\n Installing OpenStack"
 
@@ -38,14 +38,14 @@ read -p "Use FQDN settings for Helm Charts installer? y/n  " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
-  source ~/os-helm-installer/os-helm-wFQDN.sh
+  source ~/os-helm-aio-installer/os-helm-wFQDN.sh
 else
-  source ~/os-helm-installer/os-helm-only.sh
+  source ~/os-helm-aio-installer/os-helm-only.sh
 fi
 
 # Assuming OS-Helm installed first with Ingress
 echo_green "\n Installing Kubernetes Infra Weave w Ingress"
-source ~/os-helm-installer/kube-weavescope-fqdn.sh
+source ~/os-helm-aio-installer/kube-weavescope-fqdn.sh
 
 echo_green "\n Installing Kubernetes Infra Dashboard w Ingress"
-source ~/os-helm-installer/kube-dashboard-fqdn.sh
+source ~/os-helm-aio-installer/kube-dashboard-fqdn.sh
